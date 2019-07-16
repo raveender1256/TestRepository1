@@ -3,8 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <packages>
-            <package name="example.NewTest" />          
+            <package name="example.NewTest" />   
+            <package name="example.Test01" />          
         </packages>
+        
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 
