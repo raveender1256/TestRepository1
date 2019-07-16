@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test">
   <packages>
             <package name="example.NewTest" />   
-            <package name="example.Test01" />          
+            <package name="example.Test01" />     
+                 
         </packages>
         
   </test> <!-- Test -->
