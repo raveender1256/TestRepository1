@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14254" started-at="2019-07-10T17:20:45Z" finished-at="2019-07-10T17:20:59Z">
+  <suite name="Default suite" duration-ms="16989" started-at="2019-07-16T10:09:41Z" finished-at="2019-07-16T10:09:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14254" started-at="2019-07-10T17:20:45Z" finished-at="2019-07-10T17:20:59Z">
+    <test name="Default test" duration-ms="16989" started-at="2019-07-16T10:09:41Z" finished-at="2019-07-16T10:09:58Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@724af044]" name="beforeTest" is-config="true" duration-ms="5836" started-at="2019-07-10T22:50:45Z" finished-at="2019-07-10T22:50:51Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@724af044]" name="beforeTest" is-config="true" duration-ms="7644" started-at="2019-07-16T15:39:41Z" finished-at="2019-07-16T15:39:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@724af044]" name="testEasy" duration-ms="7109" started-at="2019-07-10T22:50:51Z" finished-at="2019-07-10T22:50:58Z">
+        <test-method status="PASS" signature="testEasy1()[pri:0, instance:example.NewTest@724af044]" name="testEasy1" duration-ms="7954" started-at="2019-07-16T15:39:49Z" finished-at="2019-07-16T15:39:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@724af044]" name="afterTest" is-config="true" duration-ms="1287" started-at="2019-07-10T22:50:58Z" finished-at="2019-07-10T22:50:59Z">
+        </test-method> <!-- testEasy1 -->
+        <test-method status="PASS" signature="testEasy2()[pri:0, instance:example.NewTest@724af044]" name="testEasy2" duration-ms="18" started-at="2019-07-16T15:39:57Z" finished-at="2019-07-16T15:39:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEasy2 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@724af044]" name="afterTest" is-config="true" duration-ms="1341" started-at="2019-07-16T15:39:57Z" finished-at="2019-07-16T15:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

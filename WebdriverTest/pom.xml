@@ -2,9 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>WebdriverTest</groupId>
   <artifactId>WebdriverTest</artifactId>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-<sourceDirectory>src</sourceDirectory>
+<sourceDirectory>src/test/java</sourceDirectory>
 <plugins>
       <plugin>  
       <groupId>org.apache.maven.plugins</groupId>
@@ -15,18 +16,24 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-      <plugin>
-      	<groupId>org.apache.maven.plugins</groupId>
-      	<artifactId>maven-surefire-plugin</artifactId>
-      	<version>2.12</version>
-      	<inherited>true</inherited>
-      	<configuration>
-          <suiteXmlFiles>
-          	<suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        
-        </configuration>
-      </plugin>
+   
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M1</version>
+        <configuration>
+          <useSystemClassLoader>false</useSystemClassLoader>
+           <threadCount>1</threadCount> 
+        </configuration>           	
+            <dependencies>               
+                <dependency>
+                    <groupId>org.apache.maven.surefire</groupId>
+                    <artifactId>surefire-testng</artifactId>
+                    <version>2.22.0</version>
+                </dependency>
+            </dependencies>           
+        </plugin>
+     
 </plugins> 
   </build>
 

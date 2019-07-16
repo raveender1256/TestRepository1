@@ -3,6 +3,7 @@ package example;
 //import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;		
 import org.testng.Assert;		
 import org.testng.annotations.Test;
@@ -29,6 +30,8 @@ public class NewTest {
 		public void beforeTest() {	
 			 WebDriverManager.chromedriver().setup();	      
 		      driver = new ChromeDriver();  
+			//WebDriverManager.firefoxdriver().setup();	      
+		      //driver = new FirefoxDriver();  
 		}		
 		@AfterTest
 		public void afterTest() {
