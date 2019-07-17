@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <packages>
-            <package name="example.NewTest" />   
-            <package name="example.Test01" />     
+    <classes>
+      <class name="example.Test01"/>
+      <class name="example.NewTest"/>
+    </classes>     
                  
-        </packages>
-        
+               
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 
