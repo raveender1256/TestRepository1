@@ -26,7 +26,7 @@ public class Test01 {
 	private String baseUrl;
 	
 	@BeforeTest		
-	public void BeforeTest1(){   	   		 	
+	public void BeforeTest(){   	   		 	
     	//System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
 		WebDriverManager.chromedriver().setup();
     	//FirefoxOptions FFOption = new FirefoxOptions();
@@ -45,7 +45,7 @@ public class Test01 {
     	
    // Test1:
 		@Test				
-		public void Method02(){
+		public void Test01(){
 		
 		baseUrl = "http://www.gmail.com";	
         String tagName = ""; 
@@ -62,17 +62,17 @@ public class Test01 {
         
 		driver.get("http://www.popuptest.com/popuptest2.html");
         //driver.quit();  // using QUIT all windows will close		
-     
+		
         //driver.close();
         //System.exit(0); 
-		
-	//Test2:
-        /*
+		}
+	//Test2:        
+        public void Test02(){
 		driver.get("http://demo.guru99.com/selenium/deprecated.html");
         driver.switchTo().frame("classFrame");
         driver.findElement(By.linkText("Deprecated")).click();
-        driver.close();  */
-        
+        //driver.close();  */
+		}
      // Test3:
 		/*
 		driver.get("http://jsbin.com/usidix/1");
@@ -243,7 +243,7 @@ public class Test01 {
 		 */
 		
 		
-		}
+	
 		
 		@AfterTest
 		public void Method03(){			
