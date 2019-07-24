@@ -66,7 +66,8 @@ public class Test01 {
         //driver.close();
         //System.exit(0); 
 		}
-	//Test2:        
+	//Test2:   
+		@Test
         public void Test02(){
 		driver.get("http://demo.guru99.com/selenium/deprecated.html");
         driver.switchTo().frame("classFrame");
